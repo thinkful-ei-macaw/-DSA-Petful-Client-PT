@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../MainPage/MainPage.css';
 import { Link } from 'react-router-dom';
-import { Route } from 'react-router-dom';
-import PetList from '../PetList/PetList'
 
 export default class Main extends Component {
   
@@ -19,7 +17,6 @@ export default class Main extends Component {
         <Link to='/pets'>
           <input type='button' value='Click to view pets' />
         </Link>
-        <Route exact path='/pets' component={PetList} />
       </div>
     );
   }
